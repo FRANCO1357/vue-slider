@@ -40,5 +40,13 @@ const root = new Vue({
                 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam.',
             },
           ]
+    },
+    methods: {
+        goToNext(){
+            this.currentindex++;
+        },
+        goToPrev(){
+            this.currentindex--;
+        }
     }
 });

@@ -16,7 +16,7 @@
 
     <div class="container">
         <div id="carousel">
-            <i class="fa-solid fa-circle-arrow-left" id="prev"></i>
+            <i class="fa-solid fa-circle-arrow-left" id="prev" v-on:click="goToPrev"></i>
             <div id="gallery">
                 <figure v-for="(pic, index) in pictures" :class="currentindex === index ? 'active' : '' ">
                     <img :src="pic.url" :alt="pic.title">
@@ -26,7 +26,7 @@
                     </figcaption>
                 </figure>
             </div>
-            <i class="fa-solid fa-circle-arrow-right" id="next"></i>
+            <i class="fa-solid fa-circle-arrow-right" id="next" v-on:click="goToNext"></i>
             <div class="tumbnail">
                 <div id="row">
                     <div v-for="(pic, index) in pictures" class="col">
