@@ -30,7 +30,7 @@
             <div class="tumbnail">
                 <div id="row">
                     <div v-for="(pic, index) in pictures" class="col">
-                        <img :src="pic.url" alt="" :class="currentindex === index ? 'active' : '' ">
+                        <img :src="pic.url" alt="" :class="currentindex === index ? 'active' : '' " v-on:click="goToIndex(index)">
                     </div>
                 </div>
             </div>

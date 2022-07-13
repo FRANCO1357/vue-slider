@@ -55,6 +55,9 @@ const root = new Vue({
             } else{
                 this.currentindex = this.pictures.length - 1;
             }
+        },
+        goToIndex(index){
+            this.currentindex = index;
         }
     }
 });
